@@ -1,6 +1,6 @@
 # CORPUS VIVO: JUZGADO EN LO CIVIL Y COMERCIAL N° 7 DE AVELLANEDA Y CÁMARA DE APELACIÓN DE AVELLANEDA-LANÚS (SCBA)
 
-- **Actualización Automática**: 2026-10-23T16:51:23.408Z
+- **Actualización Automática**: 2026-10-23T16:55:13.914Z
 - **Juzgado de Primera Instancia**: Juzgado en lo Civil y Comercial N° 7 de Avellaneda (`idOrganismo: 3659` - Dr. Martín Alfredo Botassi)
 - **Alzada Departamental Directa**: Cámara de Apelación en lo Civil y Comercial de Avellaneda-Lanús (`idOrganismo: 4157`)
 - **Fuente Oficial en Tiempo Real**: `https://sentencias.scba.gov.ar/` y `https://sentencias-camara.scba.gov.ar/`

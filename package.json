@@ -1,0 +1,14 @@
+{
+  "name": "proyectista-scba",
+  "version": "1.0.0",
+  "description": "Sistema local de consulta jurisprudencial y proyección de resoluciones conectado en tiempo real a sentencias.scba.gov.ar (Juzgado en lo Civil y Comercial N° 7 de Avellaneda y Cámaras de Apelación PBA)",
+  "main": "motor_jurisprudencia_scba.js",
+  "bin": {
+    "buscar-scba": "./motor_jurisprudencia_scba.js",
+    "mcp-scba": "./mcp_server_scba.js"
+  },
+  "scripts": {
+    "buscar": "node motor_jurisprudencia_scba.js",
+    "mcp": "node mcp_server_scba.js"
+  }
+}

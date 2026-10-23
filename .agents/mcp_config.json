@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "proyectista-scba": {
+      "command": "node",
+      "args": ["c:/Users/Pc/Desktop/Proyectista-SCBA/mcp_server_scba.js"],
+      "env": {
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+      }
+    }
+  }
+}

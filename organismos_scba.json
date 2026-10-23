@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "sistema": "Motor Jurisprudencial y Proyectista CPCCBA - SCBA",
+    "fecha_relevamiento": "2026-10-23",
+    "ssl_verification_disabled": true,
+    "portales": {
+      "primera_instancia": "https://sentencias.scba.gov.ar",
+      "segunda_instancia": "https://sentencias-camara.scba.gov.ar"
+    },
+    "endpoints": {
+      "listar_organismos": "/RegistroElectronico/OrganismosDeUnRegistro?idRegistro={idRegistro}",
+      "buscar_registros": "/RegistroElectronico/BuscarRegistrosPorFechaYOrganismo",
+      "obtener_texto_integro": "/RegistroElectronico/ObtenerRegistroVisualizar/",
+      "obtener_pdf_base64": "/RegistroElectronico/ObtenerRegistroVisualizarPdf/"
+    },
+    "registros": {
+      "1": "REGISTRO DE SENTENCIAS",
+      "2": "REGISTRO DE RESOLUCIONES"
+    },
+    "fechas_minimas_sistema": {
+      "sentencias_scba_gov_ar": "01/06/2025",
+      "sentencias_camara_scba_gov_ar": "01/03/2025"
+    },
+    "notas_tecnicas_dom": [
+      "El parámetro JSON para búsqueda por texto libre en BuscarRegistrosPorFechaYOrganismo se denomina exactamente 'texoIncluido' (con el typo nativo del portal SCBA).",
+      "El endpoint OrganismosDeUnRegistro?idRegistro=1 e idRegistro=2 en sentencias.scba.gov.ar lista los 284 órganos de primera instancia; con idRegistro=3 expone el padrón maestro de 1191 órganos de toda la provincia (incluyendo la Cámara de Avellaneda-Lanús ID 4157 y todas las Cámaras y Salas departamentales).",
+      "El endpoint ObtenerRegistroVisualizar/ recibe POST JSON { idCodigoAcceso: '<HEX_ID>' } sin requerir token de reCAPTCHA y devuelve el HTML completo con metadatos, firmantes, número de registro (RS/RR) y el texto íntegro del fallo."
+    ]
+  },
+  "juzgado_propio": {
+    "id": "3659",
+    "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 7 - AVELLANEDA",
+    "nombre_html_raw": "JUZGADO EN LO CIVIL Y COMERCIAL N&#xB0; 7 - AVELLANEDA",
+    "departamento_judicial": "Avellaneda-Lanús",
+    "sede": "Avellaneda",
+    "instancia": "Primera Instancia",
+    "juez_titular": "Dr. Martín Alfredo Botassi",
+    "registros_habilitados": ["1", "2"]
+  },
+  "alzada_directa": {
+    "principal": {
+      "id": "4157",
+      "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - AVELLANEDA / LANUS",
+      "departamento_judicial": "Avellaneda-Lanús",
+      "prioridad": 1,
+      "rol": "Alzada Departamental Directa (Cámara de Apelación en lo Civil y Comercial de Avellaneda-Lanús)",
+      "activa_en_registros": true
+    },
+    "alzada_residual_historica_lomas_de_zamora": [
+      {
+        "id": "312",
+        "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LOMAS DE ZAMORA",
+        "departamento_judicial": "Lomas de Zamora (interviene también en causas AL preexistentes)",
+        "sala": "Sala I",
+        "prioridad": 2,
+        "activa_en_registros": true
+      },
+      {
+        "id": "313",
+        "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LOMAS DE ZAMORA",
+        "departamento_judicial": "Lomas de Zamora (interviene también en causas AL preexistentes)",
+        "sala": "Sala II",
+        "prioridad": 2,
+        "activa_en_registros": true
+      },
+      {
+        "id": "2063",
+        "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - LOMAS DE ZAMORA",
+        "departamento_judicial": "Lomas de Zamora (interviene también en causas AL preexistentes)",
+        "sala": "Sala III",
+        "prioridad": 2,
+        "activa_en_registros": true
+      },
+      {
+        "id": "2062",
+        "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - LOMAS DE ZAMORA",
+        "departamento_judicial": "Lomas de Zamora",
+        "sala": "Presidencia / General",
+        "prioridad": 3,
+        "activa_en_registros": true
+      }
+    ]
+  },
+  "camaras_civil_y_comercial_por_departamento": {
+    "Avellaneda-Lanús": [
+      { "id": "4157", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - AVELLANEDA / LANUS", "sala": "Sala Única / Cámara", "activa": true, "prioridad": 1 }
+    ],
+    "Lomas de Zamora": [
+      { "id": "312", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LOMAS DE ZAMORA", "sala": "Sala I", "activa": true, "prioridad": 2 },
+      { "id": "313", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LOMAS DE ZAMORA", "sala": "Sala II", "activa": true, "prioridad": 2 },
+      { "id": "2063", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - LOMAS DE ZAMORA", "sala": "Sala III", "activa": true, "prioridad": 2 },
+      { "id": "2062", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - LOMAS DE ZAMORA", "sala": "Presidencia / General", "activa": true, "prioridad": 3 }
+    ],
+    "La Plata": [
+      { "id": "210", "nombre": "CAMARA I DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LA PLATA", "sala": "Cámara I - Sala I", "activa": true, "prioridad": 3 },
+      { "id": "211", "nombre": "CAMARA I DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LA PLATA", "sala": "Cámara I - Sala II", "activa": true, "prioridad": 3 },
+      { "id": "212", "nombre": "CAMARA I DE APELACION EN LO CIVIL Y COMERCIAL SALA III - LA PLATA", "sala": "Cámara I - Sala III", "activa": true, "prioridad": 3 },
+      { "id": "1460", "nombre": "CAMARA I DE APELACION EN LO CIVIL Y COMERCIAL - LA PLATA", "sala": "Cámara I - Presidencia", "activa": false, "prioridad": 5 },
+      { "id": "213", "nombre": "CAMARA II DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LA PLATA", "sala": "Cámara II - Sala I", "activa": true, "prioridad": 3 },
+      { "id": "214", "nombre": "CAMARA II DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LA PLATA", "sala": "Cámara II - Sala II", "activa": true, "prioridad": 3 },
+      { "id": "215", "nombre": "CAMARA II DE APELACION EN LO CIVIL Y COMERCIAL SALA III - LA PLATA", "sala": "Cámara II - Sala III", "activa": true, "prioridad": 3 },
+      { "id": "1461", "nombre": "CAMARA II DE APELACION EN LO CIVIL Y COMERCIAL - LA PLATA", "sala": "Cámara II - Presidencia", "activa": false, "prioridad": 5 }
+    ],
+    "Quilmes": [
+      { "id": "577", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - QUILMES", "sala": "Sala I", "activa": true, "prioridad": 3 },
+      { "id": "578", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - QUILMES", "sala": "Sala II", "activa": true, "prioridad": 3 },
+      { "id": "2089", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - PRESIDENCIA - QUILMES", "sala": "Presidencia", "activa": true, "prioridad": 4 }
+    ],
+    "San Isidro": [
+      { "id": "627", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - SAN ISIDRO", "sala": "Sala I", "activa": true, "prioridad": 3 },
+      { "id": "628", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - SAN ISIDRO", "sala": "Sala II", "activa": true, "prioridad": 3 },
+      { "id": "2070", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - SAN ISIDRO", "sala": "Sala III", "activa": true, "prioridad": 3 },
+      { "id": "2077", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - SAN ISIDRO", "sala": "Presidencia", "activa": false, "prioridad": 5 }
+    ],
+    "San Martín": [
+      { "id": "689", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - SAN MARTIN", "sala": "Sala I", "activa": true, "prioridad": 3 },
+      { "id": "690", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - SAN MARTIN", "sala": "Sala II", "activa": true, "prioridad": 3 },
+      { "id": "2067", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - SAN MARTIN", "sala": "Sala III", "activa": true, "prioridad": 3 },
+      { "id": "2076", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - SAN MARTIN", "sala": "Presidencia", "activa": false, "prioridad": 5 },
+      { "id": "3390", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - SALA DE FERIA - SAN MARTIN", "sala": "Sala de Feria", "activa": false, "prioridad": 5 }
+    ],
+    "La Matanza": [
+      { "id": "1420", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LA MATANZA", "sala": "Sala I", "activa": true, "prioridad": 3 },
+      { "id": "1421", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LA MATANZA", "sala": "Sala II", "activa": true, "prioridad": 3 },
+      { "id": "1382", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - LA MATANZA", "sala": "Presidencia", "activa": false, "prioridad": 5 }
+    ],
+    "Morón": [
+      { "id": "415", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - MORON", "sala": "Sala I", "activa": true, "prioridad": 3 },
+      { "id": "416", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - MORON", "sala": "Sala II", "activa": true, "prioridad": 3 },
+      { "id": "2069", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - MORON", "sala": "Sala III", "activa": true, "prioridad": 3 },
+      { "id": "3134", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA ESPECIAL - MORON", "sala": "Sala Especial", "activa": false, "prioridad": 5 },
+      { "id": "2073", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - MORON", "sala": "Presidencia", "activa": false, "prioridad": 5 }
+    ],
+    "Mar del Plata": [
+      { "id": "477", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - MAR DEL PLATA", "sala": "Sala I", "activa": true, "prioridad": 3 },
+      { "id": "478", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - MAR DEL PLATA", "sala": "Sala II", "activa": true, "prioridad": 3 },
+      { "id": "2066", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - MAR DEL PLATA", "sala": "Sala III", "activa": true, "prioridad": 3 },
+      { "id": "2074", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - MAR DEL PLATA", "sala": "Presidencia", "activa": false, "prioridad": 5 }
+    ],
+    "Mercedes": [
+      { "id": "370", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - MERCEDES", "sala": "Sala I", "activa": true, "prioridad": 4 },
+      { "id": "371", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - MERCEDES", "sala": "Sala II", "activa": true, "prioridad": 4 },
+      { "id": "2068", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - MERCEDES", "sala": "Sala III", "activa": true, "prioridad": 4 },
+      { "id": "2072", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - MERCEDES", "sala": "Presidencia", "activa": false, "prioridad": 5 }
+    ],
+    "Azul": [
+      { "id": "15", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - AZUL", "sala": "Sala I", "activa": true, "prioridad": 4 },
+      { "id": "14", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - AZUL", "sala": "Sala II", "activa": true, "prioridad": 4 },
+      { "id": "2122", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - AZUL", "sala": "Presidencia", "activa": false, "prioridad": 5 }
+    ],
+    "Bahía Blanca": [
+      { "id": "40", "nombre": "CAMARA PRIMERA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - BAHIA BLANCA", "sala": "Sala I", "activa": true, "prioridad": 4 },
+      { "id": "41", "nombre": "CAMARA PRIMERA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - BAHIA BLANCA", "sala": "Sala II", "activa": true, "prioridad": 4 },
+      { "id": "2071", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - PRESIDENCIA - BAHIA BLANCA", "sala": "Presidencia", "activa": false, "prioridad": 5 }
+    ],
+    "San Nicolás": [
+      { "id": "2075", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - SAN NICOLAS", "sala": "Sala Única / Cámara", "activa": true, "prioridad": 4 },
+      { "id": "740", "nombre": "CAMARA PRIMERA DE APELACION EN LO CIVIL Y COMERCIAL - SAN NICOLAS", "sala": "Denominación Histórica", "activa": false, "prioridad": 5 }
+    ],
+    "Dolores": [
+      { "id": "118", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - DOLORES", "sala": "Sala Única / Cámara", "activa": true, "prioridad": 4 }
+    ],
+    "Junín": [
+      { "id": "170", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - JUNIN", "sala": "Sala Única / Cámara", "activa": true, "prioridad": 4 }
+    ],
+    "Zárate-Campana": [
+      { "id": "1947", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - CAMPANA", "sala": "Sala Única / Cámara", "activa": true, "prioridad": 4 }
+    ],
+    "Pergamino": [
+      { "id": "2090", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL PERGAMINO", "sala": "Sala Única / Cámara", "activa": true, "prioridad": 4 }
+    ],
+    "Necochea": [
+      { "id": "1856", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - NECOCHEA", "sala": "Sala Única / Cámara", "activa": true, "prioridad": 4 }
+    ],
+    "Trenque Lauquen": [
+      { "id": "774", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - TRENQUE LAUQUEN", "sala": "Sala Única / Cámara", "activa": true, "prioridad": 4 }
+    ]
+  },
+  "camaras_civil_y_comercial_todas": [
+    { "id": "4157", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - AVELLANEDA / LANUS", "activa": true, "prioridad": 1 },
+    { "id": "312", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LOMAS DE ZAMORA", "activa": true, "prioridad": 2 },
+    { "id": "313", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LOMAS DE ZAMORA", "activa": true, "prioridad": 2 },
+    { "id": "2063", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - LOMAS DE ZAMORA", "activa": true, "prioridad": 2 },
+    { "id": "2062", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - LOMAS DE ZAMORA", "activa": true, "prioridad": 3 },
+    { "id": "210", "nombre": "CAMARA I DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LA PLATA", "activa": true, "prioridad": 3 },
+    { "id": "211", "nombre": "CAMARA I DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LA PLATA", "activa": true, "prioridad": 3 },
+    { "id": "212", "nombre": "CAMARA I DE APELACION EN LO CIVIL Y COMERCIAL SALA III - LA PLATA", "activa": true, "prioridad": 3 },
+    { "id": "213", "nombre": "CAMARA II DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LA PLATA", "activa": true, "prioridad": 3 },
+    { "id": "214", "nombre": "CAMARA II DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LA PLATA", "activa": true, "prioridad": 3 },
+    { "id": "215", "nombre": "CAMARA II DE APELACION EN LO CIVIL Y COMERCIAL SALA III - LA PLATA", "activa": true, "prioridad": 3 },
+    { "id": "577", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - QUILMES", "activa": true, "prioridad": 3 },
+    { "id": "578", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - QUILMES", "activa": true, "prioridad": 3 },
+    { "id": "627", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - SAN ISIDRO", "activa": true, "prioridad": 3 },
+    { "id": "628", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - SAN ISIDRO", "activa": true, "prioridad": 3 },
+    { "id": "2070", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - SAN ISIDRO", "activa": true, "prioridad": 3 },
+    { "id": "689", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - SAN MARTIN", "activa": true, "prioridad": 3 },
+    { "id": "690", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - SAN MARTIN", "activa": true, "prioridad": 3 },
+    { "id": "2067", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - SAN MARTIN", "activa": true, "prioridad": 3 },
+    { "id": "1420", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - LA MATANZA", "activa": true, "prioridad": 3 },
+    { "id": "1421", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - LA MATANZA", "activa": true, "prioridad": 3 },
+    { "id": "415", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - MORON", "activa": true, "prioridad": 3 },
+    { "id": "416", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - MORON", "activa": true, "prioridad": 3 },
+    { "id": "2069", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - MORON", "activa": true, "prioridad": 3 },
+    { "id": "477", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - MAR DEL PLATA", "activa": true, "prioridad": 3 },
+    { "id": "478", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - MAR DEL PLATA", "activa": true, "prioridad": 3 },
+    { "id": "2066", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - MAR DEL PLATA", "activa": true, "prioridad": 3 },
+    { "id": "370", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - MERCEDES", "activa": true, "prioridad": 4 },
+    { "id": "371", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - MERCEDES", "activa": true, "prioridad": 4 },
+    { "id": "2068", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA III - MERCEDES", "activa": true, "prioridad": 4 },
+    { "id": "15", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - AZUL", "activa": true, "prioridad": 4 },
+    { "id": "14", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - AZUL", "activa": true, "prioridad": 4 },
+    { "id": "40", "nombre": "CAMARA PRIMERA DE APELACION EN LO CIVIL Y COMERCIAL SALA I - BAHIA BLANCA", "activa": true, "prioridad": 4 },
+    { "id": "41", "nombre": "CAMARA PRIMERA DE APELACION EN LO CIVIL Y COMERCIAL SALA II - BAHIA BLANCA", "activa": true, "prioridad": 4 },
+    { "id": "2075", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - SAN NICOLAS", "activa": true, "prioridad": 4 },
+    { "id": "118", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - DOLORES", "activa": true, "prioridad": 4 },
+    { "id": "170", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - JUNIN", "activa": true, "prioridad": 4 },
+    { "id": "1947", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - CAMPANA", "activa": true, "prioridad": 4 },
+    { "id": "2090", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL PERGAMINO", "activa": true, "prioridad": 4 },
+    { "id": "1856", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - NECOCHEA", "activa": true, "prioridad": 4 },
+    { "id": "774", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - TRENQUE LAUQUEN", "activa": true, "prioridad": 4 },
+    { "id": "2089", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - PRESIDENCIA - QUILMES", "activa": true, "prioridad": 4 },
+    { "id": "2122", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - AZUL", "activa": false, "prioridad": 5 },
+    { "id": "1382", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - LA MATANZA", "activa": false, "prioridad": 5 },
+    { "id": "2074", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - MAR DEL PLATA", "activa": false, "prioridad": 5 },
+    { "id": "2072", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - MERCEDES", "activa": false, "prioridad": 5 },
+    { "id": "2073", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - MORON", "activa": false, "prioridad": 5 },
+    { "id": "2071", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - PRESIDENCIA - BAHIA BLANCA", "activa": false, "prioridad": 5 },
+    { "id": "3390", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - SALA DE FERIA - SAN MARTIN", "activa": false, "prioridad": 5 },
+    { "id": "2077", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - SAN ISIDRO", "activa": false, "prioridad": 5 },
+    { "id": "2076", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL - SAN MARTIN", "activa": false, "prioridad": 5 },
+    { "id": "3134", "nombre": "CAMARA DE APELACION EN LO CIVIL Y COMERCIAL SALA ESPECIAL - MORON", "activa": false, "prioridad": 5 },
+    { "id": "1460", "nombre": "CAMARA I DE APELACION EN LO CIVIL Y COMERCIAL - LA PLATA", "activa": false, "prioridad": 5 },
+    { "id": "1461", "nombre": "CAMARA II DE APELACION EN LO CIVIL Y COMERCIAL - LA PLATA", "activa": false, "prioridad": 5 },
+    { "id": "740", "nombre": "CAMARA PRIMERA DE APELACION EN LO CIVIL Y COMERCIAL - SAN NICOLAS", "activa": false, "prioridad": 5 }
+  ],
+  "juzgados_civil_y_comercial_avellaneda_lanus": [
+    { "id": "2078", "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 1 - AVELLANEDA" },
+    { "id": "2079", "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 2 - AVELLANEDA" },
+    { "id": "3639", "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 3- AVELLANEDA" },
+    { "id": "2107", "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 4 (EX JCC N°1) - LANUS" },
+    { "id": "2106", "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 5 (EX JCC N° 2) - LANUS" },
+    { "id": "3363", "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 6 (EX JCC N°3)- LANUS" },
+    { "id": "3659", "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 7 - AVELLANEDA" },
+    { "id": "4125", "nombre": "JUZGADO EN LO CIVIL Y COMERCIAL N° 8 - AVELLANEDA" }
+  ]
+}
